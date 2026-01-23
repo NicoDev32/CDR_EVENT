@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import { Quasar } from 'quasar';
+import { QCarousel, QCarouselSlide, QImg, Quasar } from 'quasar';
 import quasarLang from 'quasar/lang/fr';
 import '@quasar/extras/material-icons/material-icons.css';
 import 'quasar/src/css/index.sass';
@@ -11,5 +11,10 @@ createApp(App)
   .use(router)
   .use(Quasar, {
     lang: quasarLang,
+    components: {
+      QCarousel,
+      QCarouselSlide,
+      QImg,
+    },
   })
   .mount('#app');
