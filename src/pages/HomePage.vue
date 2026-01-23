@@ -18,18 +18,19 @@
         </p>
       </div>
       <div ref="ctaWrapper" class="mt-10 flex flex-wrap items-center justify-center gap-4">
-        <RouterLink
-          to="/services"
-          class="rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-lagoon shadow-lg transition hover:bg-linen"
-        >
-          Nos services
-        </RouterLink>
-        <RouterLink
-          to="/realisations"
-          class="rounded-full border border-white/70 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-white/90 hover:text-lagoon"
-        >
-          Nos réalisations
-        </RouterLink>
+      <RouterLink
+  to="/services"
+  class="inline-flex items-center justify-center rounded-full bg-lagoon px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-md transition-all hover:bg-opacity-90 hover:shadow-lg active:scale-95"
+>
+  Nos services
+</RouterLink>
+
+<RouterLink
+  to="/realisations"
+  class="inline-flex items-center justify-center rounded-full border-2 border-lagoon px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-lagoon transition-all hover:bg-lagoon hover:text-white active:scale-95"
+>
+  Nos réalisations
+</RouterLink>
       </div>
     </div>
   </section>

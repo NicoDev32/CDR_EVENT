@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import { QCarousel, QCarouselSlide, QImg, Quasar } from 'quasar';
+import { QCarousel, QCarouselSlide, QImg, QTabs, QTab, QIcon, QRouteTab, Quasar } from 'quasar';
 import quasarLang from 'quasar/lang/fr';
 import '@quasar/extras/material-icons/material-icons.css';
 import 'quasar/src/css/index.sass';
@@ -15,6 +15,10 @@ createApp(App)
       QCarousel,
       QCarouselSlide,
       QImg,
+      QTabs,
+      QTab,
+      QIcon,
+      QRouteTab
     },
   })
   .mount('#app');

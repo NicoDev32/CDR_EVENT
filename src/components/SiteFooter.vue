@@ -19,7 +19,12 @@
       </div>
     </div>
     <div class="border-t border-white/40 py-4 text-center text-xs uppercase tracking-[0.3em] text-slate-500">
-      © 2024 CDR EVENT. Tous droits réservés.
+      © {{ currentYear }} CDR EVENT. Tous droits réservés.
     </div>
   </footer>
 </template>
+
+<script setup>
+// On récupère l'année en cours
+const currentYear = new Date().getFullYear();
+</script
