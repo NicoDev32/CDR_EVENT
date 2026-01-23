@@ -13,37 +13,50 @@
     </div>
 
     <div class="mt-12 grid gap-6 md:grid-cols-3">
-      <div v-for="card in cards" :key="card.title" class="glass-card p-6">
-        <div class="mb-4 flex h-40 items-center justify-center rounded-2xl border border-dune bg-white/60 text-xs uppercase tracking-[0.2em] text-slate-500">
-          {{ card.placeholder }}
+      <div v-for="card in cards" :key="card.title" ref="projectCards" class="glass-card p-6">
+        <div class="mb-4 overflow-hidden rounded-2xl border border-white/60">
+          <QImg :src="card.image" class="h-44 w-full" img-class="h-44 w-full object-cover" />
         </div>
         <h2 class="font-display text-xl text-lagoon">{{ card.title }}</h2>
         <p class="mt-2 text-sm text-slate-600">{{ card.text }}</p>
       </div>
     </div>
-
-    <p class="mt-8 text-xs uppercase tracking-[0.3em] text-slate-500">
-      Images à déposer dans <span class="font-semibold">/public/images/realisations</span>.
-    </p>
   </section>
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue';
+import { gsap } from 'gsap';
+
 const cards = [
   {
     title: 'Mariage en Lorraine',
     text: 'Ambiance romantique et matières naturelles.',
-    placeholder: 'Visuel 01',
+    image: '/images/carousel/mariage-1.jpg',
   },
   {
     title: 'Lancement de marque',
     text: 'Installation contemporaine et éclairage doux.',
-    placeholder: 'Visuel 02',
+    image: '/images/carousel/marque-1.jpg',
   },
   {
     title: 'Anniversaire privé',
     text: 'Palette nude et détails artisanaux.',
-    placeholder: 'Visuel 03',
+    image: '/images/carousel/celebration-1.jpg',
   },
 ];
+
+const projectCards = ref([]);
+
+onMounted(() => {
+  if (projectCards.value.length) {
+    gsap.from(projectCards.value, {
+      opacity: 0,
+      y: 26,
+      stagger: 0.12,
+      duration: 0.8,
+      ease: 'power2.out',
+    });
+  }
+});
 </script>

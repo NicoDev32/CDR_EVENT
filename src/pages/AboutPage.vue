@@ -15,29 +15,67 @@
           </p>
         </div>
       </div>
-      <div class="glass-card p-6">
-        <div class="flex h-52 items-center justify-center rounded-2xl border border-dune bg-white/70 text-xs uppercase tracking-[0.2em] text-slate-500">
-          Portrait / atelier
-        </div>
+      <div ref="portraitCard" class="glass-card overflow-hidden p-6">
+        <QImg
+          :src="aboutImage"
+          class="h-60 w-full rounded-2xl"
+          img-class="h-60 w-full object-cover"
+        />
         <p class="mt-4 text-sm text-slate-600">
-          Ajoutez votre image dans <span class="font-semibold">/public/images/about</span>.
+          Atelier de création et repérages sur mesure pour concevoir votre décor.
         </p>
       </div>
     </div>
 
     <div class="mt-14 grid gap-6 md:grid-cols-3">
-      <div class="glass-card p-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Approche</p>
-        <p class="mt-3 text-sm text-slate-600">Accompagnement créatif et logistique, toujours centré sur l'émotion.</p>
-      </div>
-      <div class="glass-card p-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Territoires</p>
-        <p class="mt-3 text-sm text-slate-600">France • Belgique • Luxembourg • Europe</p>
-      </div>
-      <div class="glass-card p-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Engagement</p>
-        <p class="mt-3 text-sm text-slate-600">Sourcing responsable et collaboration locale.</p>
+      <div v-for="value in values" :key="value.title" ref="valueCards" class="glass-card p-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">{{ value.title }}</p>
+        <p class="mt-3 text-sm text-slate-600">{{ value.text }}</p>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { onMounted, ref } from 'vue';
+import { gsap } from 'gsap';
+
+const aboutImage = '/images/carousel/celebration-1.jpg';
+
+const values = [
+  {
+    title: 'Approche',
+    text: "Accompagnement créatif et logistique, toujours centré sur l'émotion.",
+  },
+  {
+    title: 'Territoires',
+    text: 'France • Belgique • Luxembourg • Europe',
+  },
+  {
+    title: 'Engagement',
+    text: 'Sourcing responsable et collaboration locale.',
+  },
+];
+
+const valueCards = ref([]);
+const portraitCard = ref(null);
+
+onMounted(() => {
+  gsap.from(portraitCard.value, {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    ease: 'power2.out',
+  });
+  if (valueCards.value.length) {
+    gsap.from(valueCards.value, {
+      opacity: 0,
+      y: 24,
+      stagger: 0.12,
+      duration: 0.7,
+      ease: 'power2.out',
+      delay: 0.2,
+    });
+  }
+});
+</script>
