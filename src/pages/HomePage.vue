@@ -50,12 +50,15 @@
 
     <div class="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-stretch">
       <QCarousel
+        v-model="activeSlide"
         animated
         infinite
         autoplay
         arrows
         navigation
         height="380px"
+        control-color="white"
+        navigation-icon="radio_button_unchecked"
         class="rounded-3xl shadow-xl"
       >
         <QCarouselSlide
@@ -113,6 +116,7 @@ const logoWrapper = ref(null);
 const ctaWrapper = ref(null);
 const featureCards = ref([]);
 const highlightCards = ref([]);
+const activeSlide = ref('slide-1');
 
 const heroImage = '/images/carousel/mariage-1.jpg';
 
