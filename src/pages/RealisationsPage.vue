@@ -42,7 +42,7 @@ const cards = [
   {
     title: 'Anniversaire privé',
     text: 'Palette nude et détails artisanaux.',
-    image: '/images/carousel/celebration-1.jpg',
+    image: '/images/carousel/anniversaire_prive.jpg',
   },
 ];
 

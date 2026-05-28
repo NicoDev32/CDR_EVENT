@@ -55,6 +55,8 @@ const toggleMobileMenu = () => {
           <q-route-tab to="/services" label="Services" exact />
           <q-route-tab to="/realisations" label="Réalisations" exact />
           <q-route-tab to="/a-propos" label="À propos" exact />
+          <q-route-tab to="/contact" label="Contact" exact />
+
         </q-tabs>
       </nav>
 
@@ -112,6 +114,13 @@ const toggleMobileMenu = () => {
           class="mobile-link"
           >À propos</RouterLink
         >
+        <RouterLink
+  @click="mobileMenuOpen = false"
+  to="/contact"
+  class="mobile-link"
+>
+  Contact
+</RouterLink>
       </nav>
     </div>
   </transition>

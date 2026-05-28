@@ -119,7 +119,7 @@ const featureCards = ref([]);
 const highlightCards = ref([]);
 const activeSlide = ref('slide-1');
 
-const heroImage = '/images/carousel/mariage-1.jpg';
+const heroImage = '/images/carousel/marque-1.jpg';
 
 const slides = [
   { name: 'slide-1', label: 'Mariages signature', src: '/images/carousel/mariage-1.jpg' },

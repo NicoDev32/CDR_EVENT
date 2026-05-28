@@ -3,6 +3,7 @@ import HomePage from '@/pages/HomePage.vue';
 import ServicesPage from '@/pages/ServicesPage.vue';
 import RealisationsPage from '@/pages/RealisationsPage.vue';
 import AboutPage from '@/pages/AboutPage.vue';
+import ContactPage from '@/pages/ContactPage.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -11,6 +12,7 @@ const router = createRouter({
     { path: '/services', name: 'services', component: ServicesPage },
     { path: '/realisations', name: 'realisations', component: RealisationsPage },
     { path: '/a-propos', name: 'about', component: AboutPage },
+    { path: '/contact', name: 'contact', component: ContactPage },
   ],
   scrollBehavior() {
     return { top: 0 };

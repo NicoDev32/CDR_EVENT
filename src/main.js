@@ -1,9 +1,23 @@
 import { createApp } from 'vue';
-import { QCarousel, QCarouselSlide, QImg, QTabs, QTab, QIcon, QRouteTab, Quasar } from 'quasar';
+import {
+  QCarousel,
+  QCarouselSlide,
+  QImg,
+  QTabs,
+  QTab,
+  QIcon,
+  QRouteTab,
+  Quasar
+} from 'quasar';
+
 import quasarLang from 'quasar/lang/fr';
+
 import '@quasar/extras/material-icons/material-icons.css';
+import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'; // <-- ajouter ceci
+
 import 'quasar/src/css/index.sass';
 import './styles/tailwind.css';
+
 import App from './App.vue';
 import router from './router';
 

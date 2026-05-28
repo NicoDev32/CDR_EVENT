@@ -25,12 +25,12 @@
             Des décors sur-mesure, pensés pour magnifier chaque temps fort de votre évènement.
           </p>
         </div>
-        <div class="glass-card p-6">
+        <!-- <div class="glass-card p-6">
           <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Coordination</p>
           <p class="mt-3 text-base text-slate-700">
             Une équipe dédiée pour orchestrer les prestataires et la mise en scène finale.
           </p>
-        </div>
+        </div> -->
         <div class="glass-card p-6">
           <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Palette</p>
           <p class="mt-3 text-base text-slate-700">
@@ -42,9 +42,13 @@
 
     <div class="mt-12 grid gap-8 md:grid-cols-2">
       <article v-for="service in services" :key="service.title" ref="serviceCards" class="glass-card p-8">
-        <div class="mb-6 overflow-hidden rounded-2xl border border-white/70">
-          <QImg :src="service.image" class="h-40 w-full" img-class="h-40 w-full object-cover" />
-        </div>
+        <div class="mb-6 overflow-hidden rounded-2xl border border-white/70 bg-white/50 aspect-[4/5]">
+  <QImg
+    :src="service.image"
+    class="h-full w-full"
+    img-class="h-full w-full object-contain p-3"
+  />
+</div>
         <h2 class="font-display text-2xl text-lagoon">{{ service.title }}</h2>
         <p class="mt-4 text-sm text-slate-600">
           {{ service.text }}
@@ -64,12 +68,12 @@ const services = [
   {
     title: 'Design & scénographie',
     text: "Concept créatif, inspirations et planches matières autour de votre histoire.",
-    image: '/images/carousel/mariage-1.jpg',
+    image: '/images/carousel/design_scenographie.jpg',
   },
   {
     title: 'Styling floral',
     text: 'Compositions florales, installations suspendues et arrangements sur-mesure.',
-    image: '/images/carousel/celebration-1.jpg',
+    image: '/images/carousel/Styling_floral.jpg',
   },
   {
     title: 'Location & sourcing',
@@ -77,9 +81,9 @@ const services = [
     image: '/images/carousel/marque-1.jpg',
   },
   {
-    title: 'Coordination jour J',
+    title: 'Personnalisation jour J',
     text: 'Installation, gestion des prestataires et mise en scène finale.',
-    image: '/images/carousel/mariage-1.jpg',
+    image: '/images/carousel/personnalisation.jpg',
   },
 ];
 
