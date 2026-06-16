@@ -14,7 +14,7 @@
         <p class="text-xs font-semibold uppercase tracking-[0.4em] text-white/80">Décoration évènementielle</p>
         <h1 class="font-display text-4xl md:text-6xl">CDR EVENT</h1>
         <p class="mx-auto max-w-2xl text-base text-white/85 md:text-lg">
-          Scénographies élégantes et sur-mesure pour mariages, lancements de marque et célébrations privées.
+          L’art de sublimer vos émotions pour en faire des souvenirs d’exception
         </p>
       </div>
       <div ref="ctaWrapper" class="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -38,9 +38,9 @@
   <section class="mx-auto max-w-6xl px-6 py-16">
     <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
       <div>
-        <h2 class="section-title">Univers sur-mesure</h2>
+        <h2 class="section-title">Des décors qui vous ressemblent</h2>
         <p class="section-subtitle">
-          Une direction artistique complète, inspirée par des matières nobles et des tonalités douces.
+          De l'idée à l'installation, CDR Event imagine et réalise des décorations sur-mesure pour faire de chaque évènement un moment unique et mémorable.
         </p>
       </div>
       <div class="glass-card p-6 text-sm text-slate-600">
@@ -89,10 +89,10 @@
             <h3 class="mt-3 font-display text-2xl text-lagoon">{{ feature.title }}</h3>
             <p class="mt-3 text-sm text-slate-600">{{ feature.text }}</p>
           </div>
-          <div class="flex items-center gap-3">
+          <!-- <div class="flex items-center gap-3">
             <span class="h-2 w-2 rounded-full bg-lagoon"></span>
             <span class="text-xs uppercase tracking-[0.3em] text-slate-500">{{ feature.note }}</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -129,31 +129,31 @@ const slides = [
 
 const features = [
   {
-    tag: 'Direction artistique',
-    title: 'Narration visuelle',
-    text: 'Un fil conducteur clair pour chaque détail de votre évènement.',
-    note: 'Moodboard',
+    // tag: 'Direction artistique',
+    title: 'Une décoration à votre image',
+    text: 'Chaque détail est pensé selon vos envies, votre thème et l\'ambiance que vous souhaitez créer.',
+    // note: 'Moodboard',
   },
   {
-    tag: 'Expérience invités',
-    title: 'Ambiances immersives',
-    text: 'Lumières, textiles et volumes pour créer un effet waouh.',
-    note: 'Scénographie',
+   // tag: 'Expérience invités',
+    title: 'Une décoration immersive',
+    text: 'Fleurs, lumières, matières et décoration se réunissent pour créer un véritable effet waouh.',
+   // note: 'Scénographie',
   },
 ];
 
 const highlights = [
   {
     title: 'Conception',
-    text: 'Moodboards raffinés, références matières et palettes personnalisées.',
+    text: 'Nous échangeons sur vos envies afin de créer une décoration harmonieuse qui vous ressemble.',
   },
   {
-    title: 'Production',
-    text: 'Sélection de mobilier, fleurs, luminaires et pièces signature.',
+    title: 'Création',
+    text: 'Sélection des fleurs, du mobilier, des accessoires et des élèments décoratifs adaptés à votre évènement. Créations et personnalisation basées sur vos envies.',
   },
   {
     title: 'Installation',
-    text: 'Coordination sur site et finitions délicates jusqu’au dernier détail.',
+    text: 'Mise en place, finition et communication avec vos autres prerstataires sur site, pour que vous profitiez pleinement de votre journée.',
   },
 ];
 

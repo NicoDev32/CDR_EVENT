@@ -4,7 +4,7 @@
       <div>
         <h1 class="section-title">Services</h1>
         <p class="section-subtitle">
-          Une direction artistique complète pour imaginer, produire et orchestrer vos évènements.
+          Que vous souhaitiez une prestation clé en main ou simplement louer du matériel, CDR Event vous accompagne dans tous vos projets.
         </p>
       </div>
       <span class="rounded-full border border-lagoon px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-lagoon">
@@ -20,9 +20,9 @@
       />
       <div class="grid gap-6">
         <div class="glass-card p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Signature</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Installation clé en main</p>
           <p class="mt-3 text-base text-slate-700">
-            Des décors sur-mesure, pensés pour magnifier chaque temps fort de votre évènement.
+            On imagine ensemble, je réalise pour vous. Une décoration installée avec soin pour un résultat sans stress.
           </p>
         </div>
         <!-- <div class="glass-card p-6">
@@ -32,9 +32,9 @@
           </p>
         </div> -->
         <div class="glass-card p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Palette</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Location de matériel</p>
           <p class="mt-3 text-base text-slate-700">
-            Textiles, fleurs, mobilier et lumières choisis selon le thème et le lieu.
+            Pour les créatifs qui aiment mettre la main à la pâte; louez les éléments qu'il vous faut pour réaliser votre décoration à votre façon.
           </p>
         </div>
       </div>
@@ -67,22 +67,22 @@ const heroImage = '/images/carousel/marque-1.jpg';
 const services = [
   {
     title: 'Design & scénographie',
-    text: "Concept créatif, inspirations et planches matières autour de votre histoire.",
+    text: "De l'inspiration à la mise en scène, chaque détail est imaginé pour raconter votre histoire.",
     image: '/images/carousel/design_scenographie.jpg',
   },
   {
-    title: 'Styling floral',
-    text: 'Compositions florales, installations suspendues et arrangements sur-mesure.',
+    title: 'Créations florales fraîches ou artificielles',
+    text: 'Bouquets de mariées, boutonnières, bracelets floraux, compositions florales, arches et décorations de cérémonies, pensé dans les moindres détails.',
     image: '/images/carousel/Styling_floral.jpg',
   },
   {
-    title: 'Location & sourcing',
-    text: 'Mobilier, vaisselle, textiles et accessoires soigneusement sélectionnés.',
-    image: '/images/carousel/marque-1.jpg',
+    title: 'Animations et locations',
+    text: 'Livre d\'or audio, cabine téléphonique, bar à bonbons, roue de la fortune et autres éléments décoratifs à louer pour enrichir l\'expérience de vos invités.',
+    image: '/images/carousel/marque-1.jpg'
   },
   {
-    title: 'Personnalisation jour J',
-    text: 'Installation, gestion des prestataires et mise en scène finale.',
+    title: 'Personnalisation',
+    text: 'Panneaux de bienvenue, menus, marque-places, cadeaux invités et créations personnalisées pour apporter une touche unique à votre événement.',
     image: '/images/carousel/personnalisation.jpg',
   },
 ];

@@ -2,17 +2,19 @@
   <section class="mx-auto max-w-6xl px-6 py-16">
     <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
       <div>
-        <h1 class="section-title">À propos</h1>
+        <h1 class="section-title">About me</h1>
         <p class="section-subtitle">
-          CDR EVENT imagine des univers élégants et chaleureux pour sublimer vos évènements en Lorraine et à l'international.
+          CDR EVENT imagine des univers élégants et chaleureux pour sublimer vos évènements en Lorraine, Belgique, Allemagne et Luxembourg.
         </p>
         <div class="mt-8 space-y-4 text-sm text-slate-600">
           <p>
-            Spécialisée en décoration évènementielle, l'équipe conçoit des scénographies complètes, du premier échange à la mise en place finale.
+            Je m'appelle Cynthia Daniele, j'ai 26 ans. Dans la vie, j'aime voyager, découvrir de nouvelles cultures et surtout partager. Je suis aussi une grande passionnée de musique : je chante depuis mes 15 ans, et la musique fait pleinement partie de qui je suis.
+
+L'un de mes passe-temps favoris (après rendre fou mon mari), c'est passer du temps en famille, faire la fête et créer des moments qui marquent. Et pour ça, rien de tel qu'une décoration d'exception.
+
+
           </p>
-          <p>
-            Chaque projet est pensé autour de votre histoire, avec une attention particulière aux matières nobles, aux lumières et aux volumes.
-          </p>
+        
         </div>
       </div>
       <div ref="portraitCard" class="glass-card overflow-hidden p-6">
@@ -49,11 +51,11 @@ const values = [
   },
   {
     title: 'Territoires',
-    text: 'France • Belgique • Luxembourg • Europe',
+    text: 'France • Belgique • Luxembourg • Allemagne',
   },
   {
     title: 'Engagement',
-    text: 'Sourcing responsable et collaboration locale.',
+    text: 'Transparence, honnêteté et bienveillance guident chacun de mes accompagnements, pour une relation de confiance à chaque étape.',
   },
 ];
 

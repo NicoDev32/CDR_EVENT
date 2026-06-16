@@ -2,9 +2,9 @@
   <section class="mx-auto max-w-6xl px-6 py-16">
     <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div>
-        <h1 class="section-title">Réalisations</h1>
+        <h1 class="section-title">Nos réalisations</h1>
         <p class="section-subtitle">
-          Une sélection d'ambiances sur-mesure pour vos moments inoubliables.
+          Chaque événement raconte une histoire. Découvrez les univers que nous avons imaginés pour nos clients.
         </p>
       </div>
       <span class="rounded-full bg-lagoon px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white">
@@ -30,18 +30,18 @@ import { gsap } from 'gsap';
 
 const cards = [
   {
-    title: 'Mariage en Lorraine',
-    text: 'Ambiance romantique et matières naturelles.',
+    title: 'Mariage élégants et sur-mesure',
+    text: 'Des décors pensés pour sublimer le plus beau jour de votre vie.',
     image: '/images/carousel/mariage-1.jpg',
   },
   {
-    title: 'Lancement de marque',
-    text: 'Installation contemporaine et éclairage doux.',
+    title: 'Évènements corporate',
+    text: 'Inaugurations, lancements de produits et événements d\'entreprise à l\'image de votre marque.',
     image: '/images/carousel/marque-1.jpg',
   },
   {
-    title: 'Anniversaire privé',
-    text: 'Palette nude et détails artisanaux.',
+    title: 'Évènements privés',
+    text: 'Baptêmes, anniversaires, baby showers et célébrations uniques imaginés selon vos envies.',
     image: '/images/carousel/anniversaire_prive.jpg',
   },
 ];
