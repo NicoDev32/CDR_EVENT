@@ -6,7 +6,7 @@
       <div class="space-y-3">
         <p class="font-display text-2xl text-lagoon">CDR EVENT</p>
         <p class="text-sm text-slate-600">
-          Décoratrice évènementielle pour la France, la Belgique et le Luxembourg.
+          Décoratrice évènementielle pour la France, la Belgique, le Luxembourg et l'Allemagne.
         </p>
       </div>
 
@@ -16,7 +16,7 @@
           Localisation
         </p>
         <p>Lorraine • Grand Est</p>
-        <p>Disponible en France, Belgique, Luxembourg</p>
+        <p>Disponible en France, Belgique, Luxembourg, Allemagne</p>
       </div>
 
       <!-- Contact -->

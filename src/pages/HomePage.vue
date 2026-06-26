@@ -153,7 +153,7 @@ const highlights = [
   },
   {
     title: 'Installation',
-    text: 'Mise en place, finition et communication avec vos autres prerstataires sur site, pour que vous profitiez pleinement de votre journée.',
+    text: 'Mise en place, finition et communication avec vos autres prestataires sur site, pour que vous profitiez pleinement de votre journée.',
   },
 ];
 
